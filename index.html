@@ -431,7 +431,7 @@ function generateLine(label, arr, emptyLabel, newLineAfterLabel = false) {
   report += `تقرير رقم ( ${reportNumber} )\n\n`;
   report += `تم استلام تقرير المشرفين من الساعه ( ${fromTime} ${fromTimeAmPm} ) إلى الساعه ( ${toTime} ${toTimeAmPm} )\n\n`;
 
-  report += generateLine("قيادة الكراج:", getUnits('garageLead'));
+  report += generateLine("القيادة:", getUnits('garageLead'));
   report += generateLine("مستشار القائد:", getUnits('adviser'));
   report += generateLine("إشراف عام:", getUnits('generalSupervisor'));
   report += generateLine("إشراف ميدانى:", getUnits('fieldSupervisor'));
@@ -481,6 +481,7 @@ function generateLine(label, arr, emptyLabel, newLineAfterLabel = false) {
   </script>
 </body>
 </html>
+
 
 
 
