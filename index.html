@@ -205,7 +205,7 @@
     </div>
     <!-- الوحدات المطلوبة فقط -->
     <div class="section-block">
-      <div class="group-title">القيادة:</div>
+      <div class="group-title">قيادة الكراج:</div>
       <div id="garageLead" class="units-list"></div>
       <button type="button" class="add-unit-btn" onclick="addUnit('garageLead')">إضافة وحدة</button>
     </div>
@@ -431,7 +431,7 @@ function generateLine(label, arr, emptyLabel, newLineAfterLabel = false) {
   report += `تقرير رقم ( ${reportNumber} )\n\n`;
   report += `تم استلام تقرير المشرفين من الساعه ( ${fromTime} ${fromTimeAmPm} ) إلى الساعه ( ${toTime} ${toTimeAmPm} )\n\n`;
 
-  report += generateLine("القيادة:", getUnits('garageLead'));
+  report += generateLine("قيادة الكراج:", getUnits('garageLead'));
   report += generateLine("مستشار القائد:", getUnits('adviser'));
   report += generateLine("إشراف عام:", getUnits('generalSupervisor'));
   report += generateLine("إشراف ميدانى:", getUnits('fieldSupervisor'));
@@ -450,6 +450,7 @@ function generateLine(label, arr, emptyLabel, newLineAfterLabel = false) {
   report += generateLine("فني ميناء لوس:", getUnits('losPort'));
   report += generateLine("فني ميناء بوليتو:", getUnits('bolitoPort'));
   report += generateLine("البحث والإنقاذ:", getUnits('rescue'));
+  report += `-------------------------------------------\n\n`;
   report += `تسليم التقرير :⁠\n\n`;
 
   return report;
@@ -481,7 +482,5 @@ function generateLine(label, arr, emptyLabel, newLineAfterLabel = false) {
   </script>
 </body>
 </html>
-
-
 
 
